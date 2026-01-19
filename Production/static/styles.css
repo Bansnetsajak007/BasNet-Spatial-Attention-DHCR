@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 16px; }
+
+.uploader { max-width: 560px; padding: 16px; background: #111827; border-radius: 12px; border: 1px solid #1f2937; }
+.label { display: block; margin-bottom: 8px; color: #93c5fd; }
+
+input[type="file"] { display: block; margin-bottom: 12px; }
+
+.drop-zone {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px dashed #374151; border-radius: 10px; padding: 20px; color: #94a3b8;
+  transition: border-color .2s ease, background-color .2s ease;
+  margin-bottom: 12px;
+}
+.drop-zone.hover { border-color: #93c5fd; background-color: rgba(147, 197, 253, 0.1); color: #cbd5e1; }
+
+.preview { display: none; max-width: 100%; border-radius: 10px; margin: 12px 0; border: 1px solid #1f2937; }
+
+.actions { display: flex; gap: 10px; }
+button { cursor: pointer; padding: 8px 14px; border-radius: 8px; border: 1px solid #1f2937; background: #1f2937; color: #e2e8f0; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+
+.status { margin-top: 10px; color: #cbd5e1; }
+.result { margin-top: 6px; color: #93c5fd; font-weight: 600; }

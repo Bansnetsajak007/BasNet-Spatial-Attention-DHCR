@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Written Dev Nagari Digit Recognizer</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Hand Written Dev Nagari Digit Recognizer</h1>
+    <div class="uploader">
+        <label for="imageInput" class="label">Choose an image from your computer</label>
+        <input id="imageInput" type="file" accept="image/*">
+
+        <div id="dropZone" class="drop-zone" aria-label="Drop image here">
+            <span>or drag & drop image here</span>
+        </div>
+
+        <img id="preview" alt="Selected image preview" class="preview" />
+
+        <div class="actions">
+            <button id="submitBtn" disabled>Submit</button>
+        </div>
+
+        <p id="status" class="status" role="status"></p>
+        <p id="result" class="result"></p>
+    </div>
+    <script src="../static/app.js"></script>
+</body>
+</html>
