@@ -112,6 +112,7 @@ def predict():
 
     actual_image = Image.open(io.BytesIO(image.read()))  # making a image from raw bytes
 
+
     transformed_image = test_transform_instance(actual_image) # transforming accroidn to test_transform
 
     with torch.no_grad():
